@@ -1,0 +1,15 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+ROBONOMICS_LISTENER_ACCOUNT = os.getenv("ROBONOMICS_LISTENER_ACCOUNT")
+SENDER_ADDRESS = os.getenv("SENDER_ADDRESS")
+SENDERS = [SENDER_ADDRESS]
+RECIPIENTS = [ROBONOMICS_LISTENER_ACCOUNT]
+PINATA_KEY = os.getenv("PINATA_KEY")
+PINATA_SECRET = os.getenv("PINATA_SECRET")
+DOCKER_IMAGE = os.getenv("DOCKER_IMAGE")
+ACCOUNT_SEED = os.getenv("ACCOUNT_SEED")
+REMOTE_WS = os.getenv("REMOTE_WS")
+IPFS_COMMAND_GATEWAY = os.getenv("IPFS_COMMAND_GATEWAY", "https://gateway.pinata.cloud/ipfs/")
